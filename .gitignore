@@ -111,3 +111,6 @@ xcuserdata
 
 # CocoaPods
 /Pods
+
+# Ignoring secrets
+MarvelComics/Configuration/Secrets.plist
