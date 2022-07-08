@@ -16,6 +16,15 @@
 		F29A90152877603200A7B0A0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29A90142877603200A7B0A0 /* AppCoordinator.swift */; };
 		F29A90192877647100A7B0A0 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29A90182877647100A7B0A0 /* Storyboardable.swift */; };
 		F29A901C287764EB00A7B0A0 /* ComicsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29A901B287764EB00A7B0A0 /* ComicsListViewModel.swift */; };
+		F29A9020287773CB00A7B0A0 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29A901F287773CB00A7B0A0 /* String+Ext.swift */; };
+		F29A9022287774D000A7B0A0 /* URLSession+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29A9021287774D000A7B0A0 /* URLSession+Ext.swift */; };
+		F29A90272877756100A7B0A0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29A90262877756100A7B0A0 /* NetworkError.swift */; };
+		F29A902A287778B100A7B0A0 /* ComicsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29A9029287778B100A7B0A0 /* ComicsService.swift */; };
+		F29A902C2877790000A7B0A0 /* ComicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29A902B2877790000A7B0A0 /* ComicModel.swift */; };
+		F29A902E2877A42C00A7B0A0 /* URL+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29A902D2877A42C00A7B0A0 /* URL+Ext.swift */; };
+		F29A90302877AE9000A7B0A0 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = F29A902F2877AE9000A7B0A0 /* Secrets.plist */; };
+		F29A90322877AFDA00A7B0A0 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29A90312877AFDA00A7B0A0 /* Environment.swift */; };
+		F29A90342877E52600A7B0A0 /* Data+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29A90332877E52600A7B0A0 /* Data+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +39,15 @@
 		F29A90142877603200A7B0A0 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F29A90182877647100A7B0A0 /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
 		F29A901B287764EB00A7B0A0 /* ComicsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsListViewModel.swift; sourceTree = "<group>"; };
+		F29A901F287773CB00A7B0A0 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		F29A9021287774D000A7B0A0 /* URLSession+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Ext.swift"; sourceTree = "<group>"; };
+		F29A90262877756100A7B0A0 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		F29A9029287778B100A7B0A0 /* ComicsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsService.swift; sourceTree = "<group>"; };
+		F29A902B2877790000A7B0A0 /* ComicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicModel.swift; sourceTree = "<group>"; };
+		F29A902D2877A42C00A7B0A0 /* URL+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Ext.swift"; sourceTree = "<group>"; };
+		F29A902F2877AE9000A7B0A0 /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
+		F29A90312877AFDA00A7B0A0 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		F29A90332877E52600A7B0A0 /* Data+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +85,6 @@
 				F29A900828775BC300A7B0A0 /* Coordinators */,
 				F29A900928775BC900A7B0A0 /* CustomViews */,
 				F29A900A28775BD000A7B0A0 /* Extensions */,
-				F29A900B28775BE700A7B0A0 /* Models */,
 				F29A900C28775BF800A7B0A0 /* Networking */,
 				F29A901028775C2500A7B0A0 /* Screens */,
 				F29A900E28775C0900A7B0A0 /* Storyboards */,
@@ -87,8 +104,10 @@
 		F29A900728775BBC00A7B0A0 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				F234E102287659660049E446 /* Info.plist */,
 				F234E0F4287659630049E446 /* AppDelegate.swift */,
+				F29A90312877AFDA00A7B0A0 /* Environment.swift */,
+				F234E102287659660049E446 /* Info.plist */,
+				F29A902F2877AE9000A7B0A0 /* Secrets.plist */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -112,6 +131,10 @@
 		F29A900A28775BD000A7B0A0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F29A901F287773CB00A7B0A0 /* String+Ext.swift */,
+				F29A9021287774D000A7B0A0 /* URLSession+Ext.swift */,
+				F29A902D2877A42C00A7B0A0 /* URL+Ext.swift */,
+				F29A90332877E52600A7B0A0 /* Data+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -119,6 +142,7 @@
 		F29A900B28775BE700A7B0A0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F29A902B2877790000A7B0A0 /* ComicModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -126,16 +150,11 @@
 		F29A900C28775BF800A7B0A0 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				F29A900D28775C0000A7B0A0 /* Screens */,
+				F29A900B28775BE700A7B0A0 /* Models */,
+				F29A9028287778A000A7B0A0 /* Services */,
+				F29A90252877754E00A7B0A0 /* Errors */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		F29A900D28775C0000A7B0A0 /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Screens;
 			sourceTree = "<group>";
 		};
 		F29A900E28775C0900A7B0A0 /* Storyboards */ = {
@@ -178,6 +197,22 @@
 				F29A901B287764EB00A7B0A0 /* ComicsListViewModel.swift */,
 			);
 			path = ComicsList;
+			sourceTree = "<group>";
+		};
+		F29A90252877754E00A7B0A0 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				F29A90262877756100A7B0A0 /* NetworkError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		F29A9028287778A000A7B0A0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F29A9029287778B100A7B0A0 /* ComicsService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F29A90302877AE9000A7B0A0 /* Secrets.plist in Resources */,
 				F234E101287659660049E446 /* LaunchScreen.storyboard in Resources */,
 				F234E0FE287659660049E446 /* Assets.xcassets in Resources */,
 				F234E0FC287659630049E446 /* Main.storyboard in Resources */,
@@ -252,11 +288,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				F29A90152877603200A7B0A0 /* AppCoordinator.swift in Sources */,
+				F29A9020287773CB00A7B0A0 /* String+Ext.swift in Sources */,
+				F29A9022287774D000A7B0A0 /* URLSession+Ext.swift in Sources */,
 				F234E0F9287659630049E446 /* ComicsListViewController.swift in Sources */,
+				F29A902C2877790000A7B0A0 /* ComicModel.swift in Sources */,
 				F29A901C287764EB00A7B0A0 /* ComicsListViewModel.swift in Sources */,
 				F234E0F5287659630049E446 /* AppDelegate.swift in Sources */,
+				F29A902E2877A42C00A7B0A0 /* URL+Ext.swift in Sources */,
+				F29A90322877AFDA00A7B0A0 /* Environment.swift in Sources */,
 				F29A90192877647100A7B0A0 /* Storyboardable.swift in Sources */,
+				F29A902A287778B100A7B0A0 /* ComicsService.swift in Sources */,
 				F29A90122877600800A7B0A0 /* Coordinator.swift in Sources */,
+				F29A90272877756100A7B0A0 /* NetworkError.swift in Sources */,
+				F29A90342877E52600A7B0A0 /* Data+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,6 +16,16 @@ class ComicsListViewController: UIViewController, Storyboardable {
         super.viewDidLoad()
         
         print("ComicsListViewController")
+        
+        let service = ComicsService()
+        service.getComics { result in
+            switch result {
+            case .success(let comics):
+                print("Result in VC \(comics)")
+            case .failure(let error):
+                print("Error in VC \(error.rawValue)")
+            }
+        }
     }
 
 
