@@ -20,6 +20,10 @@ extension ComicTableViewCellViewModel: ComicPresentable {
     
     // MARK: - Properties
     
+    var id: String {
+        return "\(comic.id)"
+    }
+    
     var title: String {
         return comic.title!
     }

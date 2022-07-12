@@ -92,6 +92,7 @@ extension ComicsListViewController: UITableViewDataSource, UITableViewDelegate {
         guard let comicPresentable = viewModel?.presentable(for: indexPath.item) else {
             fatalError("No Presentable Available")
         }
+        
         didSelectComic?(comicPresentable)
     }
     

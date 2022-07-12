@@ -11,6 +11,7 @@ protocol ComicPresentable {
     
     // MARK: - Properties
 
+    var id: String { get }
     var title: String  { get }
     var thumbnailUrl: URL { get }
 

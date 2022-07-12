@@ -16,6 +16,8 @@
 		F237118A287DB61600718015 /* ComicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2371188287DB61600718015 /* ComicTableViewCell.swift */; };
 		F237118B287DB61600718015 /* ComicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2371189287DB61600718015 /* ComicTableViewCell.xib */; };
 		F237118E287DB63500718015 /* ComicTVCViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237118D287DB63500718015 /* ComicTVCViewModel.swift */; };
+		F2371191287DCF4E00718015 /* ComicDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2371190287DCF4E00718015 /* ComicDetailViewController.swift */; };
+		F2371194287DE34E00718015 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2371193287DE34E00718015 /* ImageManager.swift */; };
 		F29A90122877600800A7B0A0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29A90112877600800A7B0A0 /* Coordinator.swift */; };
 		F29A90152877603200A7B0A0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29A90142877603200A7B0A0 /* AppCoordinator.swift */; };
 		F29A90192877647100A7B0A0 /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29A90182877647100A7B0A0 /* Storyboardable.swift */; };
@@ -43,6 +45,8 @@
 		F2371188287DB61600718015 /* ComicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicTableViewCell.swift; sourceTree = "<group>"; };
 		F2371189287DB61600718015 /* ComicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComicTableViewCell.xib; sourceTree = "<group>"; };
 		F237118D287DB63500718015 /* ComicTVCViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicTVCViewModel.swift; sourceTree = "<group>"; };
+		F2371190287DCF4E00718015 /* ComicDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicDetailViewController.swift; sourceTree = "<group>"; };
+		F2371193287DE34E00718015 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		F29A90112877600800A7B0A0 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F29A90142877603200A7B0A0 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F29A90182877647100A7B0A0 /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
@@ -119,6 +123,22 @@
 			path = ComivTVCViewModel;
 			sourceTree = "<group>";
 		};
+		F237118F287DCF3400718015 /* ComicDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F2371190287DCF4E00718015 /* ComicDetailViewController.swift */,
+			);
+			path = ComicDetail;
+			sourceTree = "<group>";
+		};
+		F2371192287DE33E00718015 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				F2371193287DE34E00718015 /* ImageManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		F29A900628775BB600A7B0A0 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +197,7 @@
 		F29A900C28775BF800A7B0A0 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				F2371192287DE33E00718015 /* Managers */,
 				F29A900B28775BE700A7B0A0 /* Models */,
 				F29A9028287778A000A7B0A0 /* Services */,
 				F29A90252877754E00A7B0A0 /* Errors */,
@@ -204,6 +225,7 @@
 		F29A901028775C2500A7B0A0 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				F237118F287DCF3400718015 /* ComicDetail */,
 				F29A901A287764D300A7B0A0 /* ComicsList */,
 			);
 			path = Screens;
@@ -318,11 +340,13 @@
 			files = (
 				F29A90152877603200A7B0A0 /* AppCoordinator.swift in Sources */,
 				F237118A287DB61600718015 /* ComicTableViewCell.swift in Sources */,
+				F2371194287DE34E00718015 /* ImageManager.swift in Sources */,
 				F29A9020287773CB00A7B0A0 /* String+Ext.swift in Sources */,
 				F29A9022287774D000A7B0A0 /* URLSession+Ext.swift in Sources */,
 				F237118E287DB63500718015 /* ComicTVCViewModel.swift in Sources */,
 				F234E0F9287659630049E446 /* ComicsListViewController.swift in Sources */,
 				F29A902C2877790000A7B0A0 /* ComicModel.swift in Sources */,
+				F2371191287DCF4E00718015 /* ComicDetailViewController.swift in Sources */,
 				F29A901C287764EB00A7B0A0 /* ComicsListViewModel.swift in Sources */,
 				F234E0F5287659630049E446 /* AppDelegate.swift in Sources */,
 				F29A902E2877A42C00A7B0A0 /* URL+Ext.swift in Sources */,

@@ -70,10 +70,11 @@ class AppCoordinator: Coordinator {
     
     // MARK: Private API
     private func showComicDetail(comic: ComicPresentable) {
-        print("show detail \(comic.title)")
         // Initialize and configure the detail view controller
+        let detailVC = ComicDetailViewController.instantiate()
+        detailVC.presentable = comic
         
         // Present view controller
-        // navigationController.present(detailVC, animated: true)
+        navigationController.present(detailVC, animated: true)
     }
 }

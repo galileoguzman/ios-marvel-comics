@@ -42,5 +42,45 @@
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="64.955357142857139"/>
         </scene>
+        <!--Comic Detail View Controller-->
+        <scene sceneID="qn9-Sd-t9W">
+            <objects>
+                <viewController storyboardIdentifier="ComicDetailViewController" id="lik-QO-YsE" customClass="ComicDetailViewController" customModule="MarvelComics" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MRh-JJ-bIz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rbe-0z-oH3">
+                                <rect key="frame" x="87" y="128" width="240" height="464"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LuO-Va-nBl">
+                                <rect key="frame" x="20" y="590" width="374" height="85"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="u1m-ML-pR0"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LuO-Va-nBl" firstAttribute="leading" secondItem="MRh-JJ-bIz" secondAttribute="leadingMargin" id="9LO-G1-la8"/>
+                            <constraint firstItem="u1m-ML-pR0" firstAttribute="trailing" secondItem="Rbe-0z-oH3" secondAttribute="trailing" constant="87" id="IDc-vn-fO7"/>
+                            <constraint firstItem="Rbe-0z-oH3" firstAttribute="top" secondItem="u1m-ML-pR0" secondAttribute="top" constant="84" id="OCX-k6-ZxI"/>
+                            <constraint firstItem="u1m-ML-pR0" firstAttribute="bottom" secondItem="Rbe-0z-oH3" secondAttribute="bottom" constant="270" id="S7E-oM-wxd"/>
+                            <constraint firstItem="Rbe-0z-oH3" firstAttribute="leading" secondItem="u1m-ML-pR0" secondAttribute="leading" constant="87" id="WSN-hs-CSv"/>
+                            <constraint firstItem="LuO-Va-nBl" firstAttribute="centerX" secondItem="Rbe-0z-oH3" secondAttribute="centerX" id="r19-yG-gyu"/>
+                            <constraint firstItem="u1m-ML-pR0" firstAttribute="bottom" secondItem="LuO-Va-nBl" secondAttribute="bottom" constant="187" id="uF1-8s-taS"/>
+                            <constraint firstItem="LuO-Va-nBl" firstAttribute="top" secondItem="u1m-ML-pR0" secondAttribute="top" constant="546" id="z4T-Lg-tva"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgComicCover" destination="Rbe-0z-oH3" id="Gr1-rb-bOQ"/>
+                        <outlet property="lblComicTitle" destination="LuO-Va-nBl" id="7FN-Bw-w3o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zm7-7o-ABr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950.72463768115949" y="64.955357142857139"/>
+        </scene>
     </scenes>
 </document>

@@ -19,6 +19,7 @@ struct ComicsDataResponse: Decodable {
 }
 
 struct ComicModel: Decodable {
+    let id: Int
     let title: String?
     let thumbnail: ComicThumbnail?
 }
