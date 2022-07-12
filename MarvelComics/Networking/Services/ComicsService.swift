@@ -16,7 +16,7 @@ class ComicsService {
     
     init() {}
     
-    func getComics(_ completed: @escaping(Result<ComicModel, NetworkError>) -> Void) {
+    func getComics(_ completed: @escaping(Result<[ComicModel], NetworkError>) -> Void) {
         
         // TODO: Wrap hash generation into own module
         let timestamp = Int(Date().timeIntervalSince1970)
@@ -26,13 +26,13 @@ class ComicsService {
             .appending("hash", value: hash)
         let request = URLRequest(url: url)
 
-        URLSession.shared.perform(request, decode: ComicModel.self) { (result) in
+        // Performing HTTP request
+        URLSession.shared.perform(request, decode: ComicsResponse.self) { (result) in
             switch result {
             case .failure(let error):
                 completed(.failure(error))
             case .success(let object):
-                print(object)
-                completed(.success(object))
+                completed(.success(object.data?.results ?? []))
             }
         }
         

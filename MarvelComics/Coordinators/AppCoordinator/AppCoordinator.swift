@@ -49,14 +49,18 @@ class AppCoordinator: Coordinator {
     private func showHome() {
         // Initialize comics view controller
         let comicsVC = ComicsListViewController.instantiate()
-        let viewModel = ComicsListViewModel()
+        
+        // Configure view model with it's own service
+        let service = ComicsService()
+        let viewModel = ComicsListViewModel(service: service)
         
         // Configure comics view controller
         comicsVC.viewModel = viewModel
         
         // Install handlers
-        comicsVC.didSelectComic = {[weak self] in
+        comicsVC.didSelectComic = {[weak self] (comic) in
             // Self coordinator method
+            self?.showComicDetail(comic: comic)
         }
         
         
@@ -64,5 +68,12 @@ class AppCoordinator: Coordinator {
         navigationController.pushViewController(comicsVC, animated: true)
     }
     
-    
+    // MARK: Private API
+    private func showComicDetail(comic: ComicPresentable) {
+        print("show detail \(comic.title)")
+        // Initialize and configure the detail view controller
+        
+        // Present view controller
+        // navigationController.present(detailVC, animated: true)
+    }
 }
